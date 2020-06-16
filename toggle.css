@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./green-leaves-on-white-surface-2512386.jpg);background-repeat: no-repeat;
+    background-size: 100% cover;
+  }
+
+  .container {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    min-height: auto;
+  }
+
+
+  /* *:active {
+    outline:none;
+  }
+   */
+
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .nav {
+    width: 100%; 
+    text-align:center;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center; 
+    background:skyblue ;
+  }
+
+
+   nav .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 4rem;
+    padding: 0 50px;
+     text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+     margin-right: 60px;
+} 
+  
+  .nav a {
+    text-decoration:none;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+    color: black;
+    display: block;
+    padding: 10px;
+    margin-left: 15px;
+
+  }
+
+  .nav a:hover {
+    background-color: rgba(0,0,0,0.1)
+  }
+
+
+  .page {
+    width: 85%;
+    line-height: 1.5rem;
+    margin: 50px auto;
+    display: none; 
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+    transition: 1s;
+  }
+
+  img{
+    margin: 5px 20px 0 0; 
+    float: left; 
+     width: 450px;
+     height: 250px;
+  }
+
+
+  .title{
+    text-align: center;
+
+  }
+
+  .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0px 30px;
+  }
+
+  .text2{
+    padding-left: 10px;
+  }
+  
+ 
+  .default {
+    display:block; 
+  }
+  
+
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+  :target {
+    display:block; 
+    animation: fade 1s;
+  }
+  
+  :target ~ .default {
+    display:none;
+  }
+
+  @media all and (max-width: 1037px){
+    .container{
+      width: auto;
+    }
+
+    nav .logo{
+     display: none;
+    }
+
+    img{
+    width: 100%;
+    float: none;
+    }
+
+   .nav a{
+      font-size: 17px;
+      margin-left: 0px;
+      padding: 7px;
+      line-height: 4rem;
+    }
+
+    .title{
+      margin-top: 20px;
+    }
+
+  
+  }
